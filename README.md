@@ -16,8 +16,28 @@ You need to write a Python program that:
 3.	Calculates and displays the total bill.
 
 # Code:
+```
+
+menu = {
+    "coffee": 60,
+    "sandwich": 120,
+    "cake": 80
+}
+
+
+item = input()
+quantity = int(input())
+
+
+if item in menu:
+    total_bill = menu[item] * quantity
+    print("Total Bill =", total_bill)
+else:
+    print("That item is not on the menu.")
+```
 
 # OUTPUT:
+<img width="954" height="650" alt="Screenshot 2025-11-08 110805" src="https://github.com/user-attachments/assets/00a09f4f-9740-485a-ad23-b76828ca31a9" />
 
 
 # Question 2:
@@ -45,5 +65,29 @@ Grade = A
 
 
 # Code:
+```
+m1 = float(input("Enter mark for Subject 1: "))
+m2 = float(input("Enter mark for Subject 2: "))
+m3 = float(input("Enter mark for Subject 3: "))
+
+average = (m1 + m2 + m3) / 3
+
+
+if average >= 90:
+    grade = "A+"
+elif average >= 75:
+    grade = "A"
+elif average >= 60:
+    grade = "B"
+elif average >= 40:
+    grade = "C"
+else:
+    grade = "Fail"
+
+print("Average =", round(average, 2))
+print("Grade =", grade)
+```
 
 # OUTPUT:
+<img width="586" height="824" alt="Screenshot 2025-11-08 111428" src="https://github.com/user-attachments/assets/31b07083-2ddd-41c6-9e93-5d7fcc206c8a" />
+
